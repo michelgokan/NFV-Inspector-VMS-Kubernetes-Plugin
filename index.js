@@ -1,3 +1,5 @@
-exports.printMsg = function() {
-    console.log("This is a message from the demo package");
-}
+module.exports = function (loopbackApplication, options) {
+    loopbackApplication.use(options.path, function (req, res, next) {
+        res.send('Your Component');
+    });
+};
