@@ -14,6 +14,7 @@
   },
   "validations": [],
   "relations": {},
+  "foreignKeys": {},
   "acls": [],
   "methods": {}
 }
