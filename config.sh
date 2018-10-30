@@ -14,17 +14,13 @@ else
   exit 0
 fi
 
-
-echo "Please enter Kubernetes API server address"
-
+echo "Please enter Kubernetes API server address (HINT: normally master node IP):"
 read -r kubernetes_api_address
 
-echo "Please enter Kubernetes API server port"
-
+echo "Please enter Kubernetes API server port (i.e 6443):"
 read -r kubernetes_api_port
 
-echo "HTTP or HTTPS: "
-
+echo "http or https (https):"
 read -r kubernetes_api_protocol
 
 echo "Attempting to connect to Kubernetes API server..."
