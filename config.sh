@@ -1,6 +1,8 @@
 #!/bin/bash
 
-PLUGIN_NAME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd | xargs basename )"
+PLUGIN_NAME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd | xargs basename | awk '{print tolower($0)}')"
+
+source ../utils/functions.sh
 
 echo "Checking for existing configuration..."
 EXISTS=$( curl -X GET --header 'Accept: application/json' "http://127.0.0.1:3000/api/configurations/count?where=%7B%22category%22%3A%22$PLUGIN_NAME%22%7D" | jq ".count" )
@@ -23,6 +25,9 @@ read -r kubernetes_api_port
 echo "http or https (https):"
 read -r kubernetes_api_protocol
 
+echo "Paste a connection token here:"
+read -r kubernetes_token
+
 echo "Attempting to connect to Kubernetes API server..."
 
 kubernetes_api_test=$(curl -ks "$kubernetes_api_protocol://$kubernetes_api_address:$kubernetes_api_port/api/")
@@ -33,6 +38,7 @@ if [ "$kubernetes_status" == "null" ]; then
     echo "Can't connect to Kubernetes with provided information!"
     echo $kubernetes_api_test
     echo "Exiting application!"
+    exit 0
 else
     echo "Successfully connected to Kubernetes!"
     echo "Saving plugin configs..."
@@ -57,5 +63,10 @@ else
      curl -X POST --header 'Content-Type: application/json' --header \
      'Accept: application/json' -d \
      "{ \"category\": \"${PLUGIN_NAME}\", \"key\": \"kubernetes_api_test\", \"value\": \"$kubernetes_api_test_esc\" }" \
+     'http://127.0.0.1:3000/api/configurations'
+
+     curl -X POST --header 'Content-Type: application/json' --header \
+     'Accept: application/json' -d \
+     "{ \"category\": \"${PLUGIN_NAME}\", \"key\": \"kubernetes_token\", \"value\": \"$kubernetes_token\" }" \
      'http://127.0.0.1:3000/api/configurations'
 fi
