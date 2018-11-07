@@ -1,0 +1,25 @@
+{
+  "name": "kubernetes_node",
+  "plural": "kubernetes_nodes",
+  "base": "Model",
+  "properties": {},
+  "methods": {
+    "nodesInformation": {
+      "isStatic": true,
+      "accepts": [{
+        "arg": "node_type",
+        "type": "string",
+        "http": {
+          "source": "query"
+        }
+      }],
+      "returns": {
+        "arg": "nodes",
+        "type": "json"
+      },
+      "http": {
+        "verb": "get"
+      }
+    }
+  }
+}
