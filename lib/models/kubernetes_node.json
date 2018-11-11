@@ -4,22 +4,17 @@
   "base": "Model",
   "properties": {},
   "methods": {
-    "nodesInformation": {
+    "executeCommand": {
       "isStatic": true,
       "accepts": [{
-        "arg": "node_type",
+        "arg": "command",
         "type": "string",
-        "http": {
-          "source": "query"
-        },
-        "arg": "refresh_db",
-        "type": "boolean",
         "http": {
           "source": "query"
         }
       }],
       "returns": {
-        "arg": "nodes",
+        "arg": "result",
         "type": "json"
       },
       "http": {

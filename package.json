@@ -1,23 +1,51 @@
 {
-  "name": "nfv-inspector-vms-kubernetes-plugin",
-  "version": "1.0.0",
-  "description": "",
-  "main": "./lib/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "_args": [
+    [
+      "git+https://github.com/michelgokan/NFV-Inspector-VMS-Kubernetes-Plugin.git",
+      "/home/ubuntu/nfv-inspector/NFV-VMS"
+    ]
+  ],
+  "_from": "git+https://github.com/michelgokan/NFV-Inspector-VMS-Kubernetes-Plugin.git",
+  "_id": "nfv-inspector-vms-kubernetes-plugin@git+https://github.com/michelgokan/NFV-Inspector-VMS-Kubernetes-Plugin.git#241da412efaa0af725cc2550ab5f73111ad16230",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/nfv-inspector-vms-kubernetes-plugin",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "git+https://github.com/michelgokan/NFV-Inspector-VMS-Kubernetes-Plugin.git",
+    "rawSpec": "git+https://github.com/michelgokan/NFV-Inspector-VMS-Kubernetes-Plugin.git",
+    "saveSpec": "git+https://github.com/michelgokan/NFV-Inspector-VMS-Kubernetes-Plugin.git",
+    "fetchSpec": "https://github.com/michelgokan/NFV-Inspector-VMS-Kubernetes-Plugin.git",
+    "gitCommittish": null
   },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/michelgokan/NFV-Inspector-VMS-Kubernetes-Plugin.git#241da412efaa0af725cc2550ab5f73111ad16230",
+  "_spec": "git+https://github.com/michelgokan/NFV-Inspector-VMS-Kubernetes-Plugin.git",
+  "_where": "/home/ubuntu/nfv-inspector/NFV-VMS",
+  "author": {
+    "name": "Michel Gokan Khan"
+  },
+  "bugs": {
+    "url": "https://github.com/michelgokan/NFV-Inspector-VMS-Kubernetes-Plugin/issues"
+  },
+  "dependencies": {
+    "path": "^0.12.7",
+    "strong-globalize": "^4.1.2"
+  },
+  "description": "",
+  "homepage": "https://github.com/michelgokan/NFV-Inspector-VMS-Kubernetes-Plugin#readme",
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "name": "nfv-inspector-vms-kubernetes-plugin",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/michelgokan/NFV-Inspector-VMS-Kubernetes-Plugin.git"
   },
-  "author": "Michel Gokan Khan",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/michelgokan/NFV-Inspector-VMS-Kubernetes-Plugin/issues"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/michelgokan/NFV-Inspector-VMS-Kubernetes-Plugin#readme",
-  "dependencies": {
-    "path": "^0.12.7",
-    "strong-globalize": "^4.1.2"
-  }
+  "version": "1.0.0"
 }
