@@ -1,0 +1,25 @@
+{
+  "name": "k8s",
+  "plural": "k8s",
+  "base": "Model",
+  "properties": {},
+  "methods": {
+    "executeCommand": {
+      "isStatic": true,
+      "accepts": [{
+        "arg": "command",
+        "type": "string",
+        "http": {
+          "source": "query"
+        }
+      }],
+      "returns": {
+        "arg": "result",
+        "type": "json"
+      },
+      "http": {
+        "verb": "get"
+      }
+    }
+  }
+}
