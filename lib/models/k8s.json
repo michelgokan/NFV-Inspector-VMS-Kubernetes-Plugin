@@ -6,13 +6,43 @@
   "methods": {
     "executeCommand": {
       "isStatic": true,
-      "accepts": [{
-        "arg": "command",
-        "type": "string",
-        "http": {
-          "source": "query"
+      "accepts": [
+        {
+          "arg": "command",
+          "type": "string",
+          "http": {
+            "source": "query"
+          }
         }
-      }],
+      ],
+      "returns": {
+        "arg": "result",
+        "type": "json"
+      },
+      "http": {
+        "verb": "get"
+      }
+    },
+    "callAPI": {
+      "isStatic": true,
+      "accepts": [
+        {
+          "arg": "path",
+          "type": "string",
+          "http": {
+            "source": "query"
+          },
+          "required": true
+        },
+        {
+          "arg": "nodePort",
+          "type": "number",
+          "http": {
+            "source": "query"
+          },
+          "required": true
+        }
+      ],
       "returns": {
         "arg": "result",
         "type": "json"
