@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de47c948-a45f-43cf-87af-87c0084afc06" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/k8s.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/k8s.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/k8s.json" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/k8s.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/kubernetes_node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/kubernetes_node.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="de47c948-a45f-43cf-87af-87c0084afc06" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -51,7 +43,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="7" />
-          <entry key="js" value="1552" />
+          <entry key="js" value="1553" />
           <entry key="json" value="174" />
           <entry key="sh" value="173" />
         </counts>
@@ -60,7 +52,7 @@
         <counts>
           <entry key="Bash" value="173" />
           <entry key="JSON" value="174" />
-          <entry key="JavaScript" value="1552" />
+          <entry key="JavaScript" value="1553" />
           <entry key="PLAIN_TEXT" value="7" />
         </counts>
       </usages-collector>
@@ -89,8 +81,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/models/k8s.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+            <state relative-caret-position="20">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -130,6 +122,7 @@
       <find>loopback</find>
       <find>pers</find>
       <find>accepts\: \[\{arg\: \'command\'\, type\: \'string\'\}\]\,\n</find>
+      <find>promiseFromChildProcess</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -248,16 +241,15 @@
       <workItem from="1541521714111" duration="568000" />
       <workItem from="1541614192139" duration="6922000" />
       <workItem from="1541855585262" duration="4681000" />
-      <workItem from="1542044311930" duration="5952000" />
+      <workItem from="1542044311930" duration="8130000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52673000" />
+    <option name="totallyTimeSpent" value="54851000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="-318" width="1920" height="1057" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18690602" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -339,8 +331,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/models/k8s.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+        <state relative-caret-position="20">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
