@@ -13,6 +13,15 @@
           "http": {
             "source": "query"
           }
+        },
+        {
+          "arg": "JSONOutput",
+          "type": "boolean",
+          "http": {
+            "source": "query"
+          },
+          "required": false,
+          "default": false
         }
       ],
       "returns": {
