@@ -59,6 +59,16 @@
       "http": {
         "verb": "get"
       }
+    },
+    "getNodes": {
+      "isStatic": true,
+      "returns": {
+        "arg": "result",
+        "type": "json"
+      },
+      "http": {
+        "verb": "get"
+      }
     }
   }
 }
