@@ -60,7 +60,17 @@
         "verb": "get"
       }
     },
-    "getNodes": {
+    "getPods": {
+      "isStatic": true,
+      "returns": {
+        "arg": "result",
+        "type": "json"
+      },
+      "http": {
+        "verb": "get"
+      }
+    },
+    "getWorkers": {
       "isStatic": true,
       "returns": {
         "arg": "result",
