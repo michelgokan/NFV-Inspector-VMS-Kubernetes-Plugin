@@ -79,6 +79,42 @@
       "http": {
         "verb": "get"
       }
+    },
+    "setDeploymentSize": {
+      "isStatic": true,
+      "accepts": [
+        {
+          "arg": "deployment_name",
+          "type": "string",
+          "http": {
+            "source": "query"
+          },
+          "required": true
+        },
+        {
+          "arg": "cpu_cap",
+          "type": "number",
+          "http": {
+            "source": "query"
+          },
+          "required": false
+        },
+        {
+          "arg": "memory_cap",
+          "type": "number",
+          "http": {
+            "source": "query"
+          },
+          "required": false
+        }
+      ],
+      "returns": {
+        "arg": "result",
+        "type": "json"
+      },
+      "http": {
+        "verb": "get"
+      }
     }
   }
 }
