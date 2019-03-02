@@ -1,0 +1,120 @@
+{
+  "name": "k8s",
+  "plural": "k8s",
+  "base": "Model",
+  "properties": {},
+  "methods": {
+    "executeCommand": {
+      "isStatic": true,
+      "accepts": [
+        {
+          "arg": "command",
+          "type": "string",
+          "http": {
+            "source": "query"
+          }
+        },
+        {
+          "arg": "JSONOutput",
+          "type": "boolean",
+          "http": {
+            "source": "query"
+          },
+          "required": false,
+          "default": false
+        }
+      ],
+      "returns": {
+        "arg": "result",
+        "type": "json"
+      },
+      "http": {
+        "verb": "get"
+      }
+    },
+    "callAPI": {
+      "isStatic": true,
+      "accepts": [
+        {
+          "arg": "path",
+          "type": "string",
+          "http": {
+            "source": "query"
+          },
+          "required": true
+        },
+        {
+          "arg": "nodePort",
+          "type": "number",
+          "http": {
+            "source": "query"
+          },
+          "required": true
+        }
+      ],
+      "returns": {
+        "arg": "result",
+        "type": "json"
+      },
+      "http": {
+        "verb": "get"
+      }
+    },
+    "getPods": {
+      "isStatic": true,
+      "returns": {
+        "arg": "result",
+        "type": "json"
+      },
+      "http": {
+        "verb": "get"
+      }
+    },
+    "getWorkers": {
+      "isStatic": true,
+      "returns": {
+        "arg": "result",
+        "type": "json"
+      },
+      "http": {
+        "verb": "get"
+      }
+    },
+    "setDeploymentSize": {
+      "isStatic": true,
+      "accepts": [
+        {
+          "arg": "deployment_name",
+          "type": "string",
+          "http": {
+            "source": "query"
+          },
+          "required": true
+        },
+        {
+          "arg": "cpu_cap",
+          "type": "number",
+          "http": {
+            "source": "query"
+          },
+          "required": false
+        },
+        {
+          "arg": "memory_cap",
+          "type": "number",
+          "http": {
+            "source": "query"
+          },
+          "required": false
+        }
+      ],
+      "returns": {
+        "arg": "result",
+        "type": "json"
+      },
+      "http": {
+        "verb": "get"
+      }
+    }
+  }
+}

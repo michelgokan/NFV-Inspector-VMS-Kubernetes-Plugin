@@ -1,0 +1,57 @@
+{
+  "_args": [
+    [
+      "git+https://github.com/michelgokan/NFV-Inspector-VMS-Kubernetes-Plugin.git",
+      "/home/ubuntu/nfv-inspector/NFV-VMS"
+    ]
+  ],
+  "_from": "git+https://github.com/michelgokan/NFV-Inspector-VMS-Kubernetes-Plugin.git",
+  "_id": "nfv-inspector-vms-kubernetes-plugin@1.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/nfv-inspector-vms-kubernetes-plugin",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "git+https://github.com/michelgokan/NFV-Inspector-VMS-Kubernetes-Plugin.git",
+    "rawSpec": "git+https://github.com/michelgokan/NFV-Inspector-VMS-Kubernetes-Plugin.git",
+    "saveSpec": "git+https://github.com/michelgokan/NFV-Inspector-VMS-Kubernetes-Plugin.git",
+    "fetchSpec": "https://github.com/michelgokan/NFV-Inspector-VMS-Kubernetes-Plugin.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/michelgokan/NFV-Inspector-VMS-Kubernetes-Plugin.git#f48c27fda830c2fde6b726fa2d19b0c3fbec2faa",
+  "_spec": "git+https://github.com/michelgokan/NFV-Inspector-VMS-Kubernetes-Plugin.git",
+  "_where": "/home/amirsorouri00/Desktop/kubernetes/nfv-ins/NFV-VMS",
+  "author": {
+    "name": "Michel Gokan Khan"
+  },
+  "bugs": {
+    "url": "https://github.com/michelgokan/NFV-Inspector-VMS-Kubernetes-Plugin/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "mathjs": "^5.4.2",
+    "needle": "^2.2.4",
+    "path": "^0.12.7",
+    "request": "^2.88.0",
+    "strong-globalize": "^4.1.2"
+  },
+  "deprecated": false,
+  "description": "",
+  "homepage": "https://github.com/michelgokan/NFV-Inspector-VMS-Kubernetes-Plugin#readme",
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "name": "nfv-inspector-vms-kubernetes-plugin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michelgokan/NFV-Inspector-VMS-Kubernetes-Plugin.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}
